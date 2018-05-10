@@ -8,8 +8,8 @@ Struktur File
 ===============
 
 __ www (document root)<br />
-   __ ext-4.2.1 (framework extjs versi 4.2.1 dapat didownload di sencha.com)<br />
-   __ agenda_kegiatan
+\t__ ext-4.2.1 (framework extjs versi 4.2.1 dapat didownload di sencha.com)<br />
+\t__ agenda_kegiatan
 
 
 Pengistallan Database
