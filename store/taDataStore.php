@@ -1,22 +1,16 @@
 <?php
-    include "../php/mysql.db.php";
-    $db = new koneksi();
-
     include "../php/initial.php";
-    $conn = $db->connect();
+    include "../php/mysql_db.php";
 
-    $sql = "SELECT id,CONCAT(tahun, ' ', semester) AS keterangan,aktif FROM tahunakademik WHERE 1 " .
-           "ORDER BY id";
-    $db->query($sql, $rec_num, $rs);
-    $db->close($conn);
-
+    $db = new mysql_db();
+    $db->mysql_connect();
+    
+    $data = $db->getFieldValue("tahunakademik", array("id", "CONCAT(tahun, ' ', semester) AS keterangan", "aktif"));
+    $db->mysql_close();
+    
     $result = array(
-        "totalCount" => $rec_num ,
-        "topics"    => $rs
+        "totalCount" => count($data),
+        "topics"    => $data
     );
 
-    include "../php/Json.php";
-    $json = new Json();
-
-    die($json->encode($result));
-?>
+    die(json_encode($result));

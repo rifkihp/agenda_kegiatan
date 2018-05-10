@@ -1,6 +1,6 @@
 <?php
-    $db->db_host = "localhost:3306";
-    $db->db_user = "root";
-    $db->db_pass = "qwe123";
-    $db->db_name = "siakad";
-?>
+    define("DB_HOST", "127.0.0.1");
+    define("DB_PORT", "3306");
+    define("DB_USER", "root");
+    define("DB_PASSWORD", "qwe123");
+    define("DB_DATABASE", "agenda_kegiatan");
