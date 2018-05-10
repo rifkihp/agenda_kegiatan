@@ -7,9 +7,9 @@ Adalah aplikasi pencatatan jadwal kegiatan suatu lembaga atau organisasi atau ke
 Struktur File
 ===============
 
-www (document root)<br />
-&emsp; ext-4.2.1 (framework extjs versi 4.2.1 dapat didownload di sencha.com)<br />
-&ensp; agenda_kegiatan
+_ www (document root)<br />
+&emsp; |_ ext-4.2.1 (framework extjs versi 4.2.1 dapat didownload di sencha.com)<br />
+&emsp; |_ agenda_kegiatan
 
 
 Pengistallan Database
